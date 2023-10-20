@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+</head>
+<style>
+    .container {
+        text-align: center;
+        font-family: arial;
+        width: 60%;
+        margin: auto;
+        height: auto;
+        outline: dashed 0px black;
+    }
+
+    #table {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+
+    h2 {
+        color: rgb(57, 0, 90);
+    }
+</style>
+
+<body>
+    <h3>Varaliya Mohammed | S110</h3>
+    <div class="container">
+        <h1>Web Programming Practical 11</h1><br>
+        <p><b> Please click the submit button after entering all the values to view basic interest.</b></p>
+        <hr><br>
+        <table style="text-align: left;" id="table" align="center">
+            <tr>
+                <td><label for="prinpleAmtNo">Enter principal amount : </label></td>
+                <td> <input type="text" name="principleAmtNo" id="principleAmtNo" /> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><label for="time">Enter Time period : </label></td>
+                <td> <input type="text" name="time" id="time" /> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><label for="rateOfInt">Enter rate of Interest : </label></td>
+                <td> <input type="text" name="rateOfInt" id="rateOfInt" /> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td> <button onclick="simpleInterest()">Submit</button> </td>
+            </tr>
+            <tr></tr>
+        </table>
+
+        <div id="simpleInt" style="text-align: center;"> </div>
+        <div id="totalAmt" style="text-align: center;"> </div>
+
+    </div>
+
+    <script>
+
+        function simpleInterest() {
+            let principleAmtNo = parseFloat(document.querySelector("#principleAmtNo").value);
+            let time = parseFloat(document.querySelector("#time").value);
+            let rateOfInt = parseFloat(document.querySelector("#rateOfInt").value);
+
+            if (isNaN(principleAmtNo) || isNaN(time) || isNaN(rateOfInt)) {
+                alert("Please enter valid details");
+                return;
+            }
+
+            let simpleINT = parseFloat(principleAmtNo * (rateOfInt / 100) * time);
+
+            let data1 = document.getElementById("simpleInt");
+            data1.innerHTML = `<h2>The Simple Interest is : ${simpleINT}</h2>`
+
+            let data2 = document.getElementById("totalAmt");
+            data2.innerHTML = `<h2>The total amount is : ${principleAmtNo + simpleINT}</h2>`
+
+        }
+
+    </script>
+</body>
+
+</html>

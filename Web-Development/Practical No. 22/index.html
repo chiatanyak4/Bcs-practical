@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            var div = $("div");
+            div.animate({ left: '400px' }, "slow");
+            div.animate({ fontSize: '4em' }, "slow");
+        });
+    });
+
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("div").toggle("slow");
+        });
+
+        $("p").click(function () {
+            $("p").animate({ left: "250px " })
+        })
+    });
+</script>
+</head>
+
+<body>
+
+    <button>Start Animation</button>
+
+    <h4>S110 | Varaliya Mohammed</h4>
+    <h4>Web Development Practical No 22 (jquery)</h4>
+
+    <div style="background:#e1ff00;height:200px;width:300px;position:absolute;">S110 Varaliya</div>
+
+</body>
+
+</html>
