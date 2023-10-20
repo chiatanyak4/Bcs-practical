@@ -1,0 +1,186 @@
+v                                      PRACTICAL NO :- 02
+
+       NAME :- CHAITANYA KOKARE
+       ROLL NO:- S083                  
+
+
+
+AIM:- Create a registration form inside a table with no borders where people can register with you asking for your services. Registration form should have following information about the person name, age, email, date of birth, gender (radio buttons), hobbies (checkboxes), address (text area), country (list box), required service (text area) and submit button.
+
+
+
+
+
+<html>
+<body style="background-color:lightblue;"></body>
+<h1><i><b>REGISTRATION FORM</b></h1>
+<table border="0">
+<tr>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td><b>NAME:</td>
+<td><input type =text></td>
+</tr>
+<tr>
+<td><b>AGE:</td>
+<td><input type =text></td>
+</tr>
+<tr>
+<td><b>EMAIL:</td>
+<td><input type =email></td>
+</tr>
+<tr>
+<td><b>DATE OF BIRTH:</td>
+<td><input type =date></td>
+</tr>
+<tr>
+<td><b>GENDER:</td>
+<td><input type =radio>MALE<br>
+<input type=radio>FEMALE</td>
+</tr>
+<tr>
+<td><b>HOBBIES</td>
+<td><input type=checkbox>RUNNING<br>
+<input type=checkbox>READING<br>
+<input type=checkbox>SINGING<br>
+<input type=checkbox>DANCE<br>
+<input type=checkbox>BIKE RIDDING<br>
+<input type=checkbox>CRICKET<br>
+<input type=checkbox>SWIMMING</td>
+
+</tr>
+<tr>
+<td><b>ADDRESS:</td>
+<td><input type = textarea rows="4" cols="4"></td>
+</tr>
+<tr>
+<td><b>COUNTRY:</td>
+<td>
+<input list="country">
+<datalist id="country">
+<option value="India">
+<option value="France">
+<option value="China">
+<option value="USA">
+<option value="UK">
+<option value="Nepal">
+<option value="Itali">
+<option value="Bhutan">
+</datalist>
+</td>
+</tr>
+<tr>
+<td><b>REQUIRED SERVICE:</td>
+<td><input type =textarea></td>
+</tr>
+
+PRACTICAL NO:- 5
+NAME :- CHAITANYA KOKARE
+ROLL NO :- S083
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<title>LIST TAG</title>
+<h2>LIST OF SY.COMPUTER SCIENCE SUBJECT sem-3</h2>
+<ol type="A" >
+   <li>Principles of Operating System</li>
+    <li>Linear Algebra</li> 
+    <li>Data Structures</li>
+    <li>Advanced Database Concepts</li>
+    <li>Java based Application Development</li>
+    <dl><dt><li>Web Technologies</li></dt>
+     <dd>-Web technologies refers to the way computers/devices communicate. with each other using mark up languages. It invo It is communication. across the web, and create, deliver or manage web content using hypertext markup language (HTML)</dd></dl>
+    <li>Creative Content Writing</li>
+  </ol>
+<ol type="a">
+<h2>LIST OF SY.COMPUTER SCIENCE SUBJECT sem-4</h2>
+    <li>Theory of Computation</li>
+<dl>
+     <dt><li>Computer Networks</li></dt>
+      <dd>-A computer network is a system that connects numerous independent computers in order to share information (data) and resources.</dd></dl>
+      <li>Software Engineering</li>
+      <li>IoT Technologies</li>
+      <li>Android Application Development</li>
+      <li>Advanced Application Development</li>
+      <li> Research Methodology OR Management & Entrepreneurship</li>
+</ol>
+<>
+</html>
+  
+
+
+Practical no :-23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code:-[html]
+
+<html>
+<body>
+
+<form action="welcome.php" method="post">
+Name:-<input type="text" name="name"><br>
+Email:-<input type="text" name="email"><br>
+
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+
+[php]
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
