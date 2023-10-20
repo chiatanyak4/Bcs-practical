@@ -1,0 +1,44 @@
+                                 PRACTICAL NO :- 03
+NAME:- CHAITANYA KOKARE 
+ROLL NO:- S83
+AIM:-
+        Design the table using html.
+
+
+
+
+
+
+
+<html>
+<table border="1">
+<tr>
+<td colspan="3">DATA COMMUNICATION</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Name</td>
+<td>Price</td>
+</tr>
+<tr>
+<td rowspan ="2">Behrouz<br>Forouzan</td>
+<td>DCN</td>
+<td>300/-</td>
+</tr>
+<td>TCP-IP</td>
+<td>350/-</td>
+<tr>
+<td rowspan="1">Andrew<br>Tanebaum</td>
+<td>Netwoking</td>
+<td>400/-</td>
+</tr>
+<tr>
+<td rowspan="1">William<br>Stalling</td>
+<td>Communicaton<br> and Networking</td>
+<td>400/-</td>
+</tr>
+<td colspan="2">Total cost(Total 4 books)</td>
+<td>Rs.1450</td>
+</table>
+</html>
+
